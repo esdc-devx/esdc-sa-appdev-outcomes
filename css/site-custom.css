@@ -1,0 +1,64 @@
+body {
+  padding-top: 1rem;
+  text-align: left;
+
+}
+
+.box-main {
+  padding-top: 3rem;
+}
+
+.v-spacer {
+   height: 1.5rem;
+}
+
+#navMain ul.navbar-nav li.nav-item{
+  padding-right: 1.75rem !important;
+}
+
+/*
+.navbar{
+   background-color: #e3f2fd;
+}
+
+.nav-link.active {
+   border-bottom: 2px solid #212529;
+}
+*/
+
+.nav-link.active {
+   border-bottom: 2px solid #FFFFFF;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+   color: rgba(255, 255, 255, 1);
+}
+
+.nav-link .fa {
+   margin-right: 4px;
+}
+
+.dropdown-menu .dropdown-item .fa {
+   margin-right: 4px;
+}
+
+.nav-tabs .nav-link {
+   color: #212529;
+}
+
+hr.thin_90 {
+   width: 100%; 
+   height: 1px;
+   border: 0px;
+   margin: 25px 0% 25px 0%;
+   background-color:gainsboro;
+}
+
+.tab-pane {
+   padding-top: 2rem;
+}
+
+ul.padding-none {
+   margin: 0px;
+   padding: 0px 0px 0px 15px;
+}
