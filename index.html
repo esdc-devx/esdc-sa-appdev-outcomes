@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Home</title>
+	<title>Welcome</title>
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,11 +10,13 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="./css/site-custom.css">
 	<link rel="stylesheet" href="./css/pages/index.css">
+
+	<link rel="icon" href="favicon.png" type="image/png">
 </head>
 <body>
 
 <nav class="navbar navbar-expand-md navbar-dark bg-info fixed-top">
-	<a class="navbar-brand pr-5" href="#">ESDC-SA-AppDev</a>
+	<a class="navbar-brand pr-5" href="#"><img class="logo" src="./images/logo_h.png"></img></a>
 
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
@@ -23,7 +25,7 @@
 	<div class="collapse navbar-collapse" id="navMain">
 		<ul class="navbar-nav mr-auto">
 			<li class="nav-item">
-				<a class="nav-link" href="#">
+				<a class="nav-link" href="https://coggle.it/diagram/Xa8LPGI8UcxYqa_G/t/my-team-is-it-enabled-from-an-modern-perspective-red_cross/79ff70c4f2d83ea65ed42592541d7fa8494ab92bb690b77a269cea1ee0669153" target="_new">
 					<span class="fa fa-share-alt"></span>
 					Outcomes Map
 				</a>
@@ -42,411 +44,29 @@
 <div class="box-main">
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-9">
-				<h1>Continuous Integration - Unit Testing</h1>
-				<div class="v-spacer"></div>
-				<ul class="nav nav-tabs" id="cpTabMain" role="tablist">
-					<li class="nav-item">
-						<a class="nav-link active" id="tab01" data-toggle="tab" href="#tbc01" role="tab" aria-controls="ctl01" aria-selected="true">
-							Overview
-						</a>
+			<div class="col-12">
+				<h1>Welcome</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<p>Please select a page you would like to view.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-6">
+				Continuous Integration
+				<ul>
+					<li>
+						<a href="./pages/ci-unit-testing.html">Unit Testing</a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link" id="tab02" data-toggle="tab" href="#tbc02" role="tab" aria-controls="ctl02" aria-selected="false">
-							Value
-						</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" id="tab03" data-toggle="tab" href="#tbc03" role="tab" aria-controls="ctl03" aria-selected="false">
-							Best Practices
-						</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" id="tab04" data-toggle="tab" href="#tbc04" role="tab" aria-controls="ctl04" aria-selected="false">
-							References
-						</a>
+					<li>
+						<a href="./pages/ci-functional-tests.html">Functional Testing</a>
 					</li>
 				</ul>
-				<div class="tab-content" id="cpTabMainContent">
-					<div class="tab-pane fade show active" id="tbc01" role="tabpanel" aria-labelledby="tab01">
-						<div class="container-fluid">
-							<dl class="row">
-								<dt class="col-2">
-									Definition
-								</dt>
-								<dd class="col-10">
-									Unit testing is a method by which individual units of source code are tested to determine whether they are fit
-									for use. Automated Unit Testing is simply automating the execution of the unit test, so they can run without
-									manual intervention.
-								</dd>
-							</dl>
-							<dl class="row">
-								<dt class="col-2">
-									Desired State
-								</dt>
-								<dd class="col-10">
-									Unit testing practices should be adopted by all dev teams, for all solutions containing custom code.
-									The execution of unit tests should be part of the build pipeline and be as fully automated as possible.
-								</dd>
-							</dl>
-							<hr	class="thin_90">
-							<dl class="row">
-								<dt class="col-2">
-									Pathway Status
-								</dt>
-								<dd class="col-10">
-									<span class="badge badge-success">Cleared</span>
-								</dd>
-							</dl>
-							<dl class="row">
-								<dt class="col-2">
-									Status Notes
-								</dt>
-								<dd class="col-10">
-									Nothing is impeding solution teams from adopting unit testing.
-								</dd>
-							</dl>
-							<hr class="thin_90">
-							<dl class="row">
-								<dt class="col-2">
-									Realization Status
-								</dt>
-								<dd class="col-10">
-									<span class="badge badge-danger">Low</span>
-								</dd>
-							</dl>
-							<dl class="row">
-								<dt class="col-2">
-									Status Notes
-								</dt>
-								<dd class="col-10">
-									<ul class="padding-none">
-										<li>
-											Dev team culture needs to be addressed.
-										</li>
-										<li>
-											A standard set of guidance material should be made available.
-										</li>
-										<li>
-											Legacy applications aren’t necessarily built to be testable.
-										</li>
-										<li>
-											Upper management needs to push for accountability + visibility into coverage.
-										</li>
-									</ul>
-								</dd>
-							</dl>
-							<dl class="row">
-								<dt class="col-2">
-									Current SA Actions
-								</dt>
-								<dd class="col-10">
-									<ul class="padding-none">
-										<li>
-											Support the introduction of unit testing to developers.
-										</li>
-											<ul>
-												<li>
-													Will be working to raise awareness via DevCop and meeting with individual teams.
-												</li>
-												<li>
-													Working on a standard set of guidance materials.
-												</li>
-											</ul>
-										<li>
-											Thinking of a refactoring approach…
-										</li>
-										<li>
-											Upper management engagement.
-										</li>
-										<li>
-											Providing a means to measure unit test coverage…
-										</li>
-									</ul>
-								</dd>
-							</dl>
-							<dl class="row">
-								<dt class="col-2">
-									Platforms
-								</dt>
-								<dd class="col-10">
-									On-Premise, Cloud
-								</dd>
-							</dl>
-							<dl class="row">
-								<dt class="col-2">
-									Environments
-								</dt>
-								<dd class="col-10">
-									Non-PROD
-								</dd>
-							</dl>
-							<dl class="row">
-								<dt class="col-2">
-									Solution Classes
-								</dt>
-								<dd class="col-10">
-									Custom: Commercial, Open Source
-								</dd>
-							</dl>
-							<dl class="row">
-								<dt class="col-2">
-									Programming Languages
-								</dt>
-								<dd class="col-10">
-									Any
-								</dd>
-							</dl>
-						</div>
-					</div>
-					<div class="tab-pane fade" id="tbc02" role="tabpanel" aria-labelledby="tab02">
-						<ul>
-							<li>
-								A large percentage of defects are identified during its use.
-							</li>
-							<li>
-								It allows automation of the testing process.
-							</li>
-							<li>
-								Reduces difficulties of discovering errors contained in complex parts of the application.
-							</li>
-							<li>
-								Enhances test coverage because attention is given to each unit.
-							</li>
-							<li>
-								It builds in tests that allow you to make changes more easily.
-							</li>
-							<li>
-								Unit testing improves the quality of the code.
-							</li>
-							<li>
-								It allows issues and bugs to be found at an early stage.
-							</li>
-							<li>
-								It allows the programmer to refactor code or upgrade system libraries at a later point in time, while ensuring that
-								the module still works correctly.
-							</li>
-							<li>
-								When a unit of code has good test case coverage, unit testing can be considered a source of documentation of the
-								system.
-							</li>
-							<li>
-								Unit testing helps reduce the cost of bug fixes, since the bugs are found early.
-							</li>
-							<li>
-								It proves that the code works - anytime, anywhere, instantly and automatically, which in turn
-								<ul>
-									<li>
-										Gives confidence to refactor, resulting in improved design and better maintainability,
-									</li>
-									<li>
-										If something gets broken, unit tests give you (almost) instant feedback, as opposed to several days or weeks, if the
-										bug is caught by a separate QA department. Which usually enables you to fix the bug in seconds, instead of debugging for
-										hours/days, because the work is still fresh in memory.
-									</li>
-								</ul>
-							</li>
-							<li>
-								Allows you to "re-factor without fear".
-								<ul>
-									<li>
-										"I don't want to touch this code because I'm afraid I'll break it"
-									</li>
-									<li>
-										"I don't want to write new functionality within this code because I don't know how it works"
-									</li>
-								</ul>
-							</li>
-							<li>
-								TDD forces good design (app layers) which enables you to cleanly deal with dependencies.
-							</li>
-						</ul>
-					</div>
-					<div class="tab-pane fade" id="tbc03" role="tabpanel" aria-labelledby="tab03">
-						<dl>
-							<dt>
-								Unit Tests Should Be Trustworthy
-							</dt>
-							<dd>
-								The test must fail if the code is broken and only if the code is broken. If it does not, we cannot trust what the test
-								results are telling us.
-							</dd>
-						</dl>
-						<dl>
-							<dt>
-								Unit Tests Should Be Maintainable and Readable
-							</dt>
-							<dd>
-								When production code changes, tests often need to be updated, and possibly debugged as well. Therefore, it must be easy
-								to read and understand the test, not only for whoever wrote it, but for other developers as well. Always organize and
-								name your tests for clarity and readability.
-							</dd>
-						</dl>
-						<dl>
-							<dt>
-								Unit Tests Should Verify a Single-Use Case
-							</dt>
-							<dd>
-								<p>
-									Good tests validate one thing and one thing only, which means that typically, they validate a single use-case. Tests
-									that follow this best practice are simpler and more understandable, and that is good for maintainability and debugging.
-									Tests that validate more than one thing can easily become complex and time-consuming to maintain.
-								</p>
-								<p>
-									Another best practice is to use a minimal number of assertions. Some people recommend just one assertion per test (this
-									may be a little too restrictive); the idea is to focus on validating only what is needed for the use-case you are
-									testing.
-								</p>
-							</dd>
-						</dl>
-						<dl>
-							<dt>
-								Unit Tests Should Be Isolated
-							</dt>
-							<dd>
-								Tests should be runnable on any machine, in any order, without affecting each other. If possible, tests should have no
-								dependencies on environmental factors or global/external state. Tests that have these dependencies are harder to run and
-								usually unstable, making them harder to debug and fix, and end up costing more time than they save.
-							</dd>
-						</dl>
-						<dl>
-							<dt>
-								Unit Tests Should Be Automated
-							</dt>
-							<dd>
-								Make sure tests are being run in an automated process. This can be daily, or every hour, or in a Continuous Integration
-								or Delivery process. The reports need to be accessible and reviewed by everyone on the team. As a team, talk about which
-								metrics you care about: code coverage, modified code coverage, number of tests being run, performance, etc.
-							</dd>
-						</dl>
-						<dl>
-							<dt>
-								Unit Tests Should Be Executed Within an Organized Test Practice
-							</dt>
-							<dd>
-								In order to drive the success of your testing at all levels, and make the unit testing process scalable and sustainable,
-								you will need some additional practices in place. This means writing unit tests as you write your application code. Some
-								organizations write the tests before the application code (test-driven or behavior-driven programming). The important
-								thing is that tests go hand-in-hand with the application code. The tests and application code should even be reviewed
-								together in the code review process. Reviews help you understand the code being written (because they can see the
-								expected behavior) and improve tests.
-							</dd>
-						</dl>
-						<dl>
-							<dt>
-								Adopt a zero-tolerance policy for failing tests
-							</dt>
-							<dd>
-								Test failures should indicate real issues, so those issues should be addressed right away. Waiting may waste QA time or
-								inadvertently release a bug to production. The longer it takes to address failures, the more time and money those
-								failures will ultimately cost your organization. Run tests during refactoring, run tests right before you commit code,
-								and do not let a task be considered "done" until the tests are passing too.
-							</dd>
-						</dl>
-						<dl>
-							<dt>
-								Aim for at least 70% code branch coverage
-							</dt>
-							<dd>
-								<p>
-									In general, code coverage is a measurement of how much of the production code is executed while your automated tests are
-									running. By running a suite of tests and looking at code coverage data, you can get a general sense of how much of your
-									application is being tested.
-								</p>
-								<p>
-									There are many kinds of code coverage — the most common ones are line coverage and branch coverage. Most tools focus on
-									line coverage, which just tells you if a specific line was covered. Branch is more granular, as it tells you if each
-									path through the code is covered.
-								</p>
-								<p>
-									Code coverage is an important metric, but remember that increasing it is a means to an end. It's great for finding gaps
-									in testing, but it's not the only thing to focus on. Be careful not to spend too much effort trying to achieve 100%
-									coverage — it may not even be possible or feasible. The quality of your tests is the important thing. That being said,
-									achieving at least 60% coverage for your projects is a good starting point, and 80% or more is a good goal to set.
-									It's also valuable if you have automated tools that not only measure code coverage but also keep track how much modified
-									code is being covered by tests, because this can provide visibility into whether enough tests are being written along
-									with changes in production code.
-								</p>
-							</dd>
-						</dl>
-					</div>
-					<div class="tab-pane fade" id="tbc04" role="tabpanel" aria-labelledby="tab04">
-						<div class="container-fluid">
-							<dl class="row">
-								<dt class="col-2">
-									Recommended Tools -<br />.NET
-								</dt>
-								<dd class="col-10">
-									<div>
-										<a href="http://fakeiteasy.github.io/" target="_blank">
-											FakeitEasy
-										</a>
-									</div>
-									<div>
-										<a href="http://autofac.org/" target="_blank">
-											AutoFac
-										</a>
-									</div>
-									<div>
-										<a href="http://xunit.github.io/" target="_blank">
-											XUnit
-										</a>
-									</div>
-								</dd>
-							</dl>
-							<dl class="row">
-								<dt class="col-2">
-									Recommended Tools -<br />Java
-								</dt>
-								<dd class="col-10">
-									<div>
-										<a href="http://junit.org/" target="_blank">
-											JUnit
-										</a>
-									</div>
-									<div>
-										<a href="http://mockito.org/" target="_blank">
-											Mockito
-										</a>
-									</div>
-									<div>
-										<a href="https://developers.google.com/java-dev-tools/codepro/doc/" target="_blank">
-											Google Code Pro
-										</a>
-									</div>
-								</dd>
-							</dl>
-							<hr class="thin_90">
-							<dl class="row">
-								<dt class="col-2">
-									Reference Implementation -<br />.NET
-								</dt>
-								<dd class="col-10">
-									...
-								</dd>
-							</dl>
-							<dl class="row">
-								<dt class="col-2">
-									Reference Implementation -<br />Java
-								</dt>
-								<dd class="col-10">
-									...
-								</dd>
-							</dl>
-							<hr class="thin_90">
-							<dl class="row">
-								<dt class="col-2">
-									Other Links
-								</dt>
-								<dd class="col-10">
-									<a href="https://www.gcpedia.gc.ca/wiki/ESDC_Development_Community_-_Automated_Unit_Testing">
-										ESDC - Automated Unit Testing Recommendation
-									</a>
-								</dd>
-							</dl>
-						</div>
-					</div>
-				</div>
+			</div>
+			<div class="col-6">
+
 			</div>
 		</div>
 	</div>

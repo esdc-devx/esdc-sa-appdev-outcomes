@@ -16,6 +16,13 @@ body {
   padding-right: 1.75rem !important;
 }
 
+img.logo {
+   height: 26px;
+   border: 0px none #FFFFFF;
+   padding: 0px;
+   margin: 0px;
+}
+
 /*
 .navbar{
    background-color: #e3f2fd;
