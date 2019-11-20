@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Continuous Integration - Functional Testing</title>
+	<title>Continuous Integration - Performance Testing</title>
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="../css/site-custom.css">
 	<link rel="stylesheet" href="../css/pages/index.css">
-	
+
 	<link rel="icon" href="../favicon.png" type="image/png">
 </head>
 <body>
@@ -45,7 +45,7 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-9">
-				<h1>Continuous Integration - Functional Testing</h1>
+				<h1>Continuous Integration - Performance Testing</h1>
 				<div class="v-spacer"></div>
 				<ul class="nav nav-tabs" id="cpTabMain" role="tablist">
 					<li class="nav-item">
@@ -77,13 +77,9 @@
 									Definition
 								</dt>
 								<dd class="col-10">
-									Functional testing is a type of software testing whereby the system is tested against the functional requirements/specifications.
-									<br /><br />
-									Functions (or features) are tested by feeding them input and examining the output. Functional testing ensures that the requirements are properly satisfied by the application. This type of testing is not concerned with how processing occurs, but rather, with the results of processing. It simulates actual system usage but does not make any system structure assumptions.
-									<br /><br />
-									During functional testing, Black Box Testing technique is used in which the internal logic of the system being tested is not known to the tester.
-									<br /><br />
-									Functional testing is normally performed during the levels of System Testing and Acceptance Testing.
+									Performance Testing is a type of testing which ensures that a system will perform well under
+									its expected workload. It serves to investigate, measure and address any system bottlenecks related to
+									its speed (response time), scalability and stability.
 								</dd>
 							</dl>
 							<dl class="row">
@@ -91,8 +87,8 @@
 									Desired State
 								</dt>
 								<dd class="col-10">
-									Functional testing practices should be adopted by all dev teams, for all solutions containing custom code.
-									The execution of functional tests should be part of the build pipeline and be as fully automated as possible.
+									Performance testing practices should be adopted by all dev teams and for all solutions, including custom and COTS.
+									The execution of performance tests should be part of the build pipeline and be as fully automated.
 								</dd>
 							</dl>
 							<hr	class="thin_90">
@@ -101,7 +97,7 @@
 									Pathway Status
 								</dt>
 								<dd class="col-10">
-									<span class="badge badge-success">Cleared</span>
+									<span class="badge badge-warning">Partially Cleared</span>
 								</dd>
 							</dl>
 							<dl class="row">
@@ -109,7 +105,7 @@
 									Status Notes
 								</dt>
 								<dd class="col-10">
-									Nothing is impeding solution teams from adopting unit testing.
+									Tool selection needs to be expanded and supported.
 								</dd>
 							</dl>
 							<hr class="thin_90">
@@ -134,10 +130,7 @@
 											A standard set of guidance material should be made available.
 										</li>
 										<li>
-											Legacy applications aren’t necessarily built to be testable.
-										</li>
-										<li>
-											Upper management needs to push for accountability + visibility into coverage.
+											Reference implementations for the various programming languages and platforms should be made available.
 										</li>
 									</ul>
 								</dd>
@@ -149,8 +142,7 @@
 								<dd class="col-10">
 									<ul class="padding-none">
 										<li>
-											Support the introduction of unit testing to developers.
-										</li>
+											Support the introduction of performance testing to solution teams.
 											<ul>
 												<li>
 													Will be working to raise awareness via DevCop and meeting with individual teams.
@@ -159,14 +151,9 @@
 													Working on a standard set of guidance materials.
 												</li>
 											</ul>
-										<li>
-											Thinking of a refactoring approach…
 										</li>
 										<li>
-											Upper management engagement.
-										</li>
-										<li>
-											Providing a means to measure unit test coverage…
+											Management engagement to help promote the adoption within the teams.
 										</li>
 									</ul>
 								</dd>
@@ -192,7 +179,7 @@
 									Solution Classes
 								</dt>
 								<dd class="col-10">
-									Custom: Commercial, Open Source
+									All
 								</dd>
 							</dl>
 							<dl class="row">
@@ -200,7 +187,7 @@
 									Programming Languages
 								</dt>
 								<dd class="col-10">
-									Any
+									All
 								</dd>
 							</dl>
 						</div>
@@ -208,63 +195,27 @@
 					<div class="tab-pane fade" id="tbc02" role="tabpanel" aria-labelledby="tab02">
 						<ul>
 							<li>
-								A large percentage of defects are identified during its use.
-							</li>
-							<li>
-								It allows automation of the testing process.
-							</li>
-							<li>
-								Reduces difficulties of discovering errors contained in complex parts of the application.
-							</li>
-							<li>
-								Enhances test coverage because attention is given to each unit.
-							</li>
-							<li>
-								It builds in tests that allow you to make changes more easily.
-							</li>
-							<li>
-								Unit testing improves the quality of the code.
-							</li>
-							<li>
-								It allows issues and bugs to be found at an early stage.
-							</li>
-							<li>
-								It allows the programmer to refactor code or upgrade system libraries at a later point in time, while ensuring that
-								the module still works correctly.
-							</li>
-							<li>
-								When a unit of code has good test case coverage, unit testing can be considered a source of documentation of the
-								system.
-							</li>
-							<li>
-								Unit testing helps reduce the cost of bug fixes, since the bugs are found early.
-							</li>
-							<li>
-								It proves that the code works - anytime, anywhere, instantly and automatically, which in turn
+								Helps determine if a system meets speed, scalability and stability requirements during various situations.
 								<ul>
 									<li>
-										Gives confidence to refactor, resulting in improved design and better maintainability,
+										Users expect a system to respond as quickly as possible and when they don’t, satisfaction decreases.
 									</li>
 									<li>
-										If something gets broken, unit tests give you (almost) instant feedback, as opposed to several days or weeks, if the
-										bug is caught by a separate QA department. Which usually enables you to fix the bug in seconds, instead of debugging for
-										hours/days, because the work is still fresh in memory.
+										Scalability is extremely important if you want more users to interact with the system.
+									</li>
+									<li>
+										A system is expected to work at all times, when downtime occurs, users can lose confidence.
 									</li>
 								</ul>
 							</li>
 							<li>
-								Allows you to "re-factor without fear".
-								<ul>
-									<li>
-										"I don't want to touch this code because I'm afraid I'll break it"
-									</li>
-									<li>
-										"I don't want to write new functionality within this code because I don't know how it works"
-									</li>
-								</ul>
+								Helps uncover what system bottlenecks need to be improved before the product goes to production.
 							</li>
 							<li>
-								TDD forces good design (app layers) which enables you to cleanly deal with dependencies.
+								Helps ensure that a system can run for a long period without deviations.
+							</li>
+							<li>
+								Systems sent to production with good performance metrics are more likely to successfully meet their expected goals.
 							</li>
 						</ul>
 					</div>
@@ -445,8 +396,28 @@
 									Other Links
 								</dt>
 								<dd class="col-10">
-									<a href="https://www.gcpedia.gc.ca/wiki/ESDC_Development_Community_-_Automated_Unit_Testing">
-										ESDC - Automated Unit Testing Recommendation
+									<a href="https://assertible.com/blog/web-service-performance-testing-tips-and-tools-for-getting-started">
+										01
+									</a>
+									<br />
+									<a href="https://stackify.com/ultimate-guide-performance-testing-and-software-testing/">
+										02
+									</a>
+									<br />
+									<a href="https://techbeacon.com/app-dev-testing/5-best-practices-realistic-performance-testing">
+										03
+									</a>
+									<br />
+									<a href="https://www.guru99.com/performance-testing.html">
+										04
+									</a>
+									<br />
+									<a href="https://en.wikipedia.org/wiki/Software_performance_testing">
+										05
+									</a>
+									<br />
+									<a href="https://www.oreilly.com/library/view/the-art-of/9781491900536/ch01.html">
+										06
 									</a>
 								</dd>
 							</dl>

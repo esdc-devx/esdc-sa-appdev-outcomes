@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Continuous Integration - Functional Testing</title>
+	<title>Continuous Integration - Unit Testing</title>
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="../css/site-custom.css">
 	<link rel="stylesheet" href="../css/pages/index.css">
-	
+
 	<link rel="icon" href="../favicon.png" type="image/png">
 </head>
 <body>
@@ -45,7 +45,7 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-9">
-				<h1>Continuous Integration - Functional Testing</h1>
+				<h1>Continuous Integration - Unit Testing</h1>
 				<div class="v-spacer"></div>
 				<ul class="nav nav-tabs" id="cpTabMain" role="tablist">
 					<li class="nav-item">
@@ -77,13 +77,9 @@
 									Definition
 								</dt>
 								<dd class="col-10">
-									Functional testing is a type of software testing whereby the system is tested against the functional requirements/specifications.
-									<br /><br />
-									Functions (or features) are tested by feeding them input and examining the output. Functional testing ensures that the requirements are properly satisfied by the application. This type of testing is not concerned with how processing occurs, but rather, with the results of processing. It simulates actual system usage but does not make any system structure assumptions.
-									<br /><br />
-									During functional testing, Black Box Testing technique is used in which the internal logic of the system being tested is not known to the tester.
-									<br /><br />
-									Functional testing is normally performed during the levels of System Testing and Acceptance Testing.
+									Unit testing is a method by which individual units of source code are tested to determine whether they are fit
+									for use. Automated Unit Testing is simply automating the execution of the unit test, so they can run without
+									manual intervention.
 								</dd>
 							</dl>
 							<dl class="row">
@@ -91,8 +87,8 @@
 									Desired State
 								</dt>
 								<dd class="col-10">
-									Functional testing practices should be adopted by all dev teams, for all solutions containing custom code.
-									The execution of functional tests should be part of the build pipeline and be as fully automated as possible.
+									Unit testing practices should be adopted by all dev teams, for all solutions containing custom code.
+									The execution of unit tests should be part of the build pipeline and be as fully automated as possible.
 								</dd>
 							</dl>
 							<hr	class="thin_90">
@@ -137,6 +133,9 @@
 											Legacy applications aren’t necessarily built to be testable.
 										</li>
 										<li>
+											A means to measure unit test coverage should be made available.
+										</li>
+										<li>
 											Upper management needs to push for accountability + visibility into coverage.
 										</li>
 									</ul>
@@ -150,7 +149,6 @@
 									<ul class="padding-none">
 										<li>
 											Support the introduction of unit testing to developers.
-										</li>
 											<ul>
 												<li>
 													Will be working to raise awareness via DevCop and meeting with individual teams.
@@ -159,14 +157,9 @@
 													Working on a standard set of guidance materials.
 												</li>
 											</ul>
-										<li>
-											Thinking of a refactoring approach…
 										</li>
 										<li>
-											Upper management engagement.
-										</li>
-										<li>
-											Providing a means to measure unit test coverage…
+											Management engagement to help promote the adoption within the teams.
 										</li>
 									</ul>
 								</dd>
@@ -192,7 +185,7 @@
 									Solution Classes
 								</dt>
 								<dd class="col-10">
-									Custom: Commercial, Open Source
+									Custom
 								</dd>
 							</dl>
 							<dl class="row">
@@ -200,7 +193,7 @@
 									Programming Languages
 								</dt>
 								<dd class="col-10">
-									Any
+									All
 								</dd>
 							</dl>
 						</div>
