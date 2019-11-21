@@ -21,6 +21,22 @@ h1 {
    height: 1.5rem;
 }
 
+#tbc02 li {
+   padding-top: 1rem;
+}
+
+#tbc02 > ul:first-child > li:first-child {
+   padding-top: 0rem;
+}
+
+#tbc03 > dl {
+   padding-bottom: 0.75rem;
+}
+
+#tbc03 > dl > dd > ul > li {
+   padding-top: 1rem;
+}
+
 #navMain ul.navbar-nav li.nav-item{
   padding-right: 1.75rem !important;
 }
@@ -77,4 +93,13 @@ hr.thin_90 {
 ul.padding-none {
    margin: 0px;
    padding: 0px 0px 0px 15px;
+}
+
+ul.padding-some {
+   margin: 0px;
+   padding: 0px 0px 0px 25px;
+}
+
+ul.style-none {
+   list-style-type: none;
 }
