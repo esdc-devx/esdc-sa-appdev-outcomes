@@ -97,7 +97,9 @@
 									Pathway Status
 								</dt>
 								<dd class="col-10">
-									<span class="badge badge-success">Cleared</span>
+									<span class="badge badge-success" data-toggle="tooltip" data-placement="top" title="The path to realizing the outcome is clear; there are no impediments remaining.">
+										Cleared
+									</span>
 								</dd>
 							</dl>
 							<dl class="row">
@@ -114,7 +116,9 @@
 									Realization Status
 								</dt>
 								<dd class="col-10">
-									<span class="badge badge-danger">Low</span>
+									<span class="badge badge-danger" data-toggle="tooltip" data-placement="top" title="Few teams have implemented/realized the outcome.">
+										Low
+									</span>
 								</dd>
 							</dl>
 							<dl class="row">
@@ -456,6 +460,15 @@
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<!-- scripts - page specific -->
+<script src="../js/site-base.js"></script>
+
+<script>
+	$(function(){
+		ReadySiteBase.init();
+	});
+</script>
 
 </body>
 </html>

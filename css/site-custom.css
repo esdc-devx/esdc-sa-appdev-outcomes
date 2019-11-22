@@ -70,6 +70,10 @@ img.logo {
    margin-right: 4px;
 }
 
+span[data-toggle=tooltip]{
+   cursor: default;
+}
+
 .dropdown-menu .dropdown-item .fa {
    margin-right: 4px;
 }
